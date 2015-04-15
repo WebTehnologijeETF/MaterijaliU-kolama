@@ -6,14 +6,46 @@ Materijali
 </TITLE> 
 <META http-equiv="Content-Type" Content="text/html charset=utf-8">
 <link rel="stylesheet" type="text/css" href="cssMaterijali.css">
+<script type="text/javascript" src="seferJava.js"></script>
 </HEAD>
 <BODY>
-<H1>
-<img class ="naslovnica" src="Naslovnica.jpg" alt="Naslovnica">
-</H1>
-<H2>
-<a href="Pocetna.html">Pocetna</a> <a href="Kontakt.html">Kontakt</a> <a href="Linkovi.html">Linkovi</a> <a href="Materijali.html">Materijali</a>
-</H2>
+<div id="okvir">
+
+<!-- Naslov stranice -->
+<div class="naslovnica"> Materijali </div>
+
+<!-- Glavni meni -->
+<div id="meni">
+<div><a href="Pocetna.html">Pocetna</a></div>
+
+<div id="Kontakt"><a href="#" onclick="return false;" onmousedown="podmeni('podmeni1')">Kontakt</a>
+<div id="podmeni1" class="drugimeni">
+<a href="Kontakt.html">Nista 1</a>
+<a href="Kontakt.html">Nista 2</a>
+<a href="Kontakt.html">Nista 3</a>
+<a href="Kontakt.html">Nista 4</a>
+</div>
+</div>
+
+<div id="Linkovi"><a href="#" onclick="return false;" onmousedown="podmeni('podmeni2')">Linkovi</a>
+<div id="podmeni2" class="drugimeni">
+<a href="Linkovi.html">I</a>
+<a href="Linkovi.html">II</a>
+<a href="Linkovi.html">III</a>
+<a href="Linkovi.html">IV</a>
+</div>
+</div>
+
+<div id="Materijali"><a href="#" onclick="return false;" onmousedown="podmeni('podmeni3')">Materijali</a>
+<div id="podmeni3" class="drugimeni">
+<a href="Materijali.html">I godina</a>
+<a href="Materijali.html">II godina</a>
+<a href="Materijali.html">III godina</a>
+<a href="Materijali.html">IV godina</a>
+</div>
+</div>
+
+</div>
 <div class="tekst">Trenutno dostupni materijali po oblastima (izrazeno kao jedan upload od korisnika)
 </div>
 <table class="tabela" border="1" width="100%">
@@ -69,5 +101,6 @@ Ostalo
 </td>
 </tr>
 </table>
+</div>
 </BODY>
 </HTML>
