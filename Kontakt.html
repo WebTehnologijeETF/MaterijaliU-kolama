@@ -9,16 +9,18 @@ Materijali
 <script type="text/javascript" src="seferJava.js"></script>
 </HEAD>
 <BODY>
+<!-- Okvir cijele stranice -->
+
 <div id="okvir">
 
 <!-- Naslov stranice -->
-<div class="naslovnica"> Materijali </div>
+<div class="naslovnica" onmouseover="ocisti()"> Materijali </div>
 
 <!-- Glavni meni -->
 <div id="meni">
-<div><a href="Pocetna.html">Pocetna</a></div>
+<div id="Pocetna"><a id="PocetnaLink" href="Pocetna.html" onmouseover="podmeni('PocetnaLink')" onmouseout="misVani('PocetnaLink')">Pocetna</a></div>
 
-<div id="Kontakt"><a href="#" onclick="return false;" onmousedown="podmeni('podmeni1')">Kontakt</a>
+<div id="Kontakt"><a id="KontaktLink" href="#" onclick="return false;" onmouseover="podmeni('podmeni1')">Kontakt</a>
 <div id="podmeni1" class="drugimeni">
 <a href="Kontakt.html">Nista 1</a>
 <a href="Kontakt.html">Nista 2</a>
@@ -27,7 +29,7 @@ Materijali
 </div>
 </div>
 
-<div id="Linkovi"><a href="#" onclick="return false;" onmousedown="podmeni('podmeni2')">Linkovi</a>
+<div id="Linkovi"><a id="LinkoviLink" href="#" onclick="return false;" onmouseover="podmeni('podmeni2')">Linkovi</a>
 <div id="podmeni2" class="drugimeni">
 <a href="Linkovi.html">I</a>
 <a href="Linkovi.html">II</a>
@@ -36,18 +38,21 @@ Materijali
 </div>
 </div>
 
-<div id="Materijali"><a href="#" onclick="return false;" onmousedown="podmeni('podmeni3')">Materijali</a>
+<div id="Materijali"><a id="MaterijaliLink" href="#" onclick="return false;" onmouseover="podmeni('podmeni3')">Materijali</a>
 <div id="podmeni3" class="drugimeni">
 <a href="Materijali.html">I godina</a>
 <a href="Materijali.html">II godina</a>
 <a href="Materijali.html">III godina</a>
 <a href="Materijali.html">IV godina</a>
+<a href="Materijali.html">Ostalo</a>
 </div>
 </div>
 
 </div>
 
-<form class="kontakt" action="">
+<div id="glavniDio" onmouseover="ocisti()">
+
+<form class="kontakt" action=""> Kontaktirajte nas :
 <table border="0" cellspacing="0" cellpadding="2">
 <tr>
 <td>
@@ -80,6 +85,14 @@ Materijali
 </tr>
  </table>
 </form>
+
+<div id="informacije">
+SeferAlen 15458 etf Sarajevo<br>
+Sefer Alen 70230 Bugojno<br>
+asefer1@etf.unsa.ba<br>
+062/939-348
+</div>
+</div>
 </div>
 </BODY>
 </HTML>

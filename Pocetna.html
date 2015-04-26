@@ -11,16 +11,16 @@ Materijali
 <BODY>
 <!-- Okvir cijele stranice -->
 
-<div id="okvir" >
+<div id="okvir">
 
 <!-- Naslov stranice -->
-<div class="naslovnica"> Materijali </div>
+<div class="naslovnica" onmouseover="ocisti()"> Materijali </div>
 
 <!-- Glavni meni -->
 <div id="meni">
-<div><a href="Pocetna.html">Pocetna</a></div>
+<div id="Pocetna"><a id="PocetnaLink" href="Pocetna.html" onmouseover="podmeni('PocetnaLink')" onmouseout="misVani('PocetnaLink')">Pocetna</a></div>
 
-<div id="Kontakt"><a href="#" onclick="return false;" onmousedown="podmeni('podmeni1')">Kontakt</a>
+<div id="Kontakt"><a id="KontaktLink" href="#" onclick="return false;" onmouseover="podmeni('podmeni1')">Kontakt</a>
 <div id="podmeni1" class="drugimeni">
 <a href="Kontakt.html">Nista 1</a>
 <a href="Kontakt.html">Nista 2</a>
@@ -29,7 +29,7 @@ Materijali
 </div>
 </div>
 
-<div id="Linkovi"><a href="#" onclick="return false;" onmousedown="podmeni('podmeni2')">Linkovi</a>
+<div id="Linkovi"><a id="LinkoviLink" href="#" onclick="return false;" onmouseover="podmeni('podmeni2')">Linkovi</a>
 <div id="podmeni2" class="drugimeni">
 <a href="Linkovi.html">I</a>
 <a href="Linkovi.html">II</a>
@@ -38,16 +38,19 @@ Materijali
 </div>
 </div>
 
-<div id="Materijali"><a href="#" onclick="return false;" onmousedown="podmeni('podmeni3')">Materijali</a>
+<div id="Materijali"><a id="MaterijaliLink" href="#" onclick="return false;" onmouseover="podmeni('podmeni3')">Materijali</a>
 <div id="podmeni3" class="drugimeni">
 <a href="Materijali.html">I godina</a>
 <a href="Materijali.html">II godina</a>
 <a href="Materijali.html">III godina</a>
 <a href="Materijali.html">IV godina</a>
+<a href="Materijali.html">Ostalo</a>
 </div>
 </div>
 
 </div>
+
+<div id="glavniDio" onmouseover="ocisti()">
 <div id="vijesti">Vijesti</div>
 <div class="novostiOkvir">
 <div class="novostiSlika">
@@ -60,7 +63,122 @@ Trenutno stranica jos uvijek nije dostupna za punu upotrebu 29.03.2015 13:51;
 <img src="BiH.jpg" alt="BiH">
 Dobrodosli na novu stranicu materijali.com koja ce biti u funkciji u naredna dva mjeseca i pomoci ce pri razmjeni materijala vezanih za gradivo osnovnih i srednjih škola u kantonu SBK , ali i drugim dijelovima BiH koji rade na istom (ili slicnom) planu i programu.<a class="detaljnije" href=""> detaljnije... </a>
 </div>
+<div class="novostiSlika">
+<img src="BiH.jpg" alt="BiH">
+Dobrodosli na novu stranicu materijali.com koja ce biti u funkciji u naredna dva mjeseca i pomoci ce pri razmjeni materijala vezanih za gradivo osnovnih i srednjih škola u kantonu SBK , ali i drugim dijelovima BiH koji rade na istom (ili slicnom) planu i programu.<a class="detaljnije" href=""> detaljnije... </a>
 </div>
+</div>
+
+<div class ="tabela">
+<div id="naslovTabele">Trenutno dostupni materijali
+</div>
+<table border="1" width="100%">
+<tr>
+<td>
+Godina
+</td>
+<td>
+Prirodne nauke
+</td>
+<td>
+Umjetnost
+</td>
+<td>
+Sport i tjelesni odgoj
+</td>
+<td>
+Drustvene nauke
+</td>
+<td>
+Ostalo
+</td>
+</tr>
+<tr>
+<td>
+I godina
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+</tr>
+<tr>
+<td>
+II godina
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+</tr>
+<tr>
+<td>
+III godina
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+</tr>
+<tr>
+<td>
+IV godina
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+
 
 <!-- Kraj okvira stranice -->
 </div>

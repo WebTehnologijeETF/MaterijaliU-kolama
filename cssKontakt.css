@@ -10,21 +10,32 @@ font-size:80px;
 text-align:center;
 height:100px;
 width:100%;
-background: -moz-linear-gradient(top, #4DEAFF 0%, #FFFFFF 100%);
-background: -webkit-linear-gradient(top, #4DEAFF 0%,#FFFFFF 100%); 
-background: linear-gradient(top, #4DEAFF 0%, #FFFFFF 100%); 
-box-shadow: 10px 10px 10px;
+background: white;
+box-shadow: 10px 10px 10px black;
 margin-bottom:20px;
 border: #307882 1px solid;
 }
 
+div#Pocetna a{
+color:black;
+}
+
 div#meni
 {
-background:orange;
+color:black;
+background:rgb(162,186,200);
 height:20px;
 width:100%;
 border: #307882 1px solid;
 padding-bottom:0px;
+}
+
+div#meni a {
+text-decoration:none;
+}
+
+div#meni > a {
+color:black;
 }
 
 div#meni > div
@@ -35,24 +46,41 @@ float:left;
 
 div.drugimeni
 {
+position: absolute;
+z-index:2;
 display:none;
 border:#307882 1px solid;
-top:100%;
-border-top:none;
+top:152px;
+width: 70px;
 }
 
 div.drugimeni > a
 {
+color:black;
 display:block;
-background:#CDFAE5;
+background:rgb(110,148,170);
 }
 
 div.drugimeni > a:hover{
-background:#fff;
+color:white;
+background:#000;
 border:#06f 1px solid;
-color:#000;
 }
 
+div#glavniDio
+{
+padding-top:20px;
+background:-moz-linear-gradient(top, #4DEAFF 0%, #FFFFFF 100%);
+background: -webkit-linear-gradient(top, #4DEAFF 0%,#FFFFFF 100%); 
+background: linear-gradient(top, #4DEAFF 0%, #FFFFFF 100%); 
+
+}
 .kontakt{
-margin-top:105px;
+
+}
+
+div#informacije{
+position:relative;
+left:84%;
+top:-150px;
 }
