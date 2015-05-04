@@ -1,117 +1,166 @@
+*
+{
+padding:0px;
+margin:0px;
+}
+
+#stranica
+{
+background: -moz-linear-gradient(top, #C9FFFE 0%, #FFFFFF 100%);
+background: -webkit-linear-gradient(top, #4DEAFF 0%,#FFFFFF 100%); 
+background: linear-gradient(top, #4DEAFF 0%, #FFFFFF 100%);
+margin-left:auto;
+margin-right:auto;
+height:100%;
+width:1000px;
+}
+
 #okvir
 {
 margin-left:auto;
 margin-right:auto;
-width:1200px;
+width:1000px;
 }
 
-.naslovnica{
-font-size:80px;
+#naslovnica
+{
+font-size:60px;
+background:white;
 text-align:center;
-height:100px;
-width:100%;
-background: -moz-linear-gradient(top, #4DEAFF 0%, #FFFFFF 100%);
-background: -webkit-linear-gradient(top, #4DEAFF 0%,#FFFFFF 100%); 
-background: linear-gradient(top, #4DEAFF 0%, #FFFFFF 100%); 
-box-shadow: 10px 10px 10px;
-margin-bottom:20px;
-border: #307882 1px solid;
+border-bottom:1px solid black;
+border-left:1px solid black;
+border-right:1px solid black;
+box-shadow:5px 5px 5px #525252;
+height:70px;
 }
 
-div#meni
+#logoNaslovnica
 {
-background:orange;
-height:20px;
-width:100%;
-border: #307882 1px solid;
-padding-bottom:0px;
+float:left;
+margin-left:15px;
+margin-top:5px;
 }
 
-div#meni > div
+.meni
 {
-margin-left:30px;
+font-size:25px;
+position:relative;
+left:50px;
+top:35px;
+padding:0px;
+margin:0px;
+background:white;
+}
+
+.meni ul
+{
+display:block;
+list-style-type:none;
 float:left;
 }
 
-div.drugimeni
+.meni a
 {
+text-decoration:none;
+color:black;
+}
+
+#izbor1
+{
+display:inline-block;
+border-bottom:3px solid black;
+}
+
+#izbor2
+{
+display:inline-block;
+border-bottom:3px solid red;
+}
+
+#izbor3
+{
+display:inline-block;
+border-bottom:3px solid green;
+}
+
+#izbor4
+{
+display:inline-block;
+border-bottom:3px solid orange;
+}
+
+.podmeni 
+{
+position:absolute;
 display:none;
-border:#307882 1px solid;
-top:100%;
-border-top:none;
+background:white;
+font-size:20px;
+width:100px;
+left:38.1%;
+border-bottom:3px solid green;
+z-index:2;
 }
 
-div.drugimeni > a
+#podmeni1
 {
-display:block;
-background:#CDFAE5;
+margin-left:6px;
 }
 
-div.drugimeni > a:hover{
-background:#fff;
-border:#06f 1px solid;
-color:#000;
-}#okvir
+#podmeni1 ul li a:hover
 {
-margin-left:auto;
-margin-right:auto;
-width:1200px;
+color:blue;
 }
 
-.naslovnica{
-font-size:80px;
-text-align:center;
-height:100px;
-width:100%;
-background: -moz-linear-gradient(top, #4DEAFF 0%, #FFFFFF 100%);
-background: -webkit-linear-gradient(top, #4DEAFF 0%,#FFFFFF 100%); 
-background: linear-gradient(top, #4DEAFF 0%, #FFFFFF 100%); 
-box-shadow: 10px 10px 10px;
-margin-bottom:20px;
-border: #307882 1px solid;
-}
-
-div#meni
+#login
 {
-background:orange;
-height:20px;
-width:100%;
-border: #307882 1px solid;
-padding-bottom:0px;
+text-align:left;
+border-bottom:1px solid black;
+border-left:1px solid black;
+float:right;
+font-size:20px;
+width:100px;
+height:30px;
+position:relative;
+bottom:68px;
 }
 
-div#meni > div
+#register
 {
-margin-left:30px;
-float:left;
+margin-top:5px;
+border-bottom:1px solid black;
+border-left:1px solid black;
+text-align:left;
+float:right;
+position:relative;
+bottom:40px;
+left:101px;
+font-size:20px;
+width:100px;
+height:30px;
 }
 
-div.drugimeni
+#linkPrijava
 {
-display:none;
-border:#307882 1px solid;
-top:100%;
-border-top:none;
+text-decoration:none;
+color:black;
 }
 
-div.drugimeni > a
+#linkRegistracija
 {
-display:block;
-background:#CDFAE5;
-}
-
-div.drugimeni > a:hover{
-background:#fff;
-border:#06f 1px solid;
-color:#000;
+text-decoration:none;
+color:black;
 }
 
 .tabela{
-background-color:rgb(250,170,170);
+border:1px solid black;
+background-color:white;
 }
 
 .tekst{
+border-left:1px solid black;
+border-right:1px solid black;
+border-top:1px solid black;
 margin-top:105px;
-background-color:rgb(250,170,170);
+background-color:white;
 margin-bottom:0px;
 }

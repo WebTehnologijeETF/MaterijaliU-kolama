@@ -9,43 +9,43 @@ Materijali
 <script type="text/javascript" src="seferJava.js"></script>
 </HEAD>
 <BODY>
-<div id="okvir">
+<div id="stranica"> <!-- Pocetak stranice -->
 
+<div id="okvir"> <!-- Okvir cijele stranice -->
+
+
+<div id="naslovnica">
+<img id="logoNaslovnica" src="logo.jpg" alt="logoFirme"> <!-- Logo u gornjem desnom uglu -->
+
+<div class="meni"> <!-- Glavni meni -->
+<ul>
+<li id="izbor1"><a href="index.html">Pocetna</a></li>
+
+<li id="izbor2"><a href="Linkovi.html">Linkovi</a></li>
+
+<li id="izbor3" onmouseover="podmeni('podmeni1','izbor3')" onmouseout="zatvori('podmeni1','izbor3')"><a href="Materijali.html">Materijali</a>
+<div class="podmeni" id="podmeni1">
+<ul>
+<li><a href="Materijali.html">I godina</a></li>
+<li><a href="Materijali.html">II godina</a></li>
+<li><a href="Materijali.html">III godina</a></li>
+<li><a href="Materijali.html">IV godina</a></li>
+</ul>
+</div>
+</li>
+
+<li id="izbor4"><a href="Kontakt.html">Kontakt</a></li>
+
+</ul>
+</div>
+</div>
+
+<div id="login" onmouseover="promjenaBoje('login')" onmouseout="vratiBoju('login')"><a id="linkPrijava" href="#">Prijavi se</a></div> <!-- Dugme za prijavu -->
+<div id="register" onmouseover="promjenaBoje('register')" onmouseout="vratiBoju('register')"><a id="linkRegistracija" href="#">Registruj se</a></div> <!-- Dugme za registraciju -->
 <!-- Naslov stranice -->
-<div class="naslovnica"> Materijali </div>
 
-<!-- Glavni meni -->
-<div id="meni">
-<div><a href="Pocetna.html">Pocetna</a></div>
+<div id="sadrzaj"><!-- Sadrzaj stranice-->
 
-<div id="Kontakt"><a href="#" onclick="return false;" onmousedown="podmeni('podmeni1')">Kontakt</a>
-<div id="podmeni1" class="drugimeni">
-<a href="Kontakt.html">Nista 1</a>
-<a href="Kontakt.html">Nista 2</a>
-<a href="Kontakt.html">Nista 3</a>
-<a href="Kontakt.html">Nista 4</a>
-</div>
-</div>
-
-<div id="Linkovi"><a href="#" onclick="return false;" onmousedown="podmeni('podmeni2')">Linkovi</a>
-<div id="podmeni2" class="drugimeni">
-<a href="Linkovi.html">I</a>
-<a href="Linkovi.html">II</a>
-<a href="Linkovi.html">III</a>
-<a href="Linkovi.html">IV</a>
-</div>
-</div>
-
-<div id="Materijali"><a href="#" onclick="return false;" onmousedown="podmeni('podmeni3')">Materijali</a>
-<div id="podmeni3" class="drugimeni">
-<a href="Materijali.html">I godina</a>
-<a href="Materijali.html">II godina</a>
-<a href="Materijali.html">III godina</a>
-<a href="Materijali.html">IV godina</a>
-</div>
-</div>
-
-</div>
 <div class="tekst">Trenutno dostupni materijali po oblastima (izrazeno kao jedan upload od korisnika)
 </div>
 <table class="tabela" border="1" width="100%">
@@ -101,6 +101,12 @@ Ostalo
 </td>
 </tr>
 </table>
-</div>
+
+
+</div><!-- Kraj sadrzaja stranice-->
+
+</div> <!-- Kraj okvira stranice -->
+
+</div> <!-- Kraj stranice -->
 </BODY>
 </HTML>

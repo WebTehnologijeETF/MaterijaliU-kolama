@@ -9,57 +9,54 @@ Materijali
 <script type="text/javascript" src="seferJava.js"></script>
 </HEAD>
 <BODY>
-<!-- Okvir cijele stranice -->
 
-<div id="okvir">
+<div id="stranica"> <!-- Pocetak stranice -->
 
+
+
+<div id="okvir"> <!-- Okvir cijele stranice -->
+
+
+<div id="naslovnica">
+<img id="logoNaslovnica" src="logo.jpg" alt="logoFirme"> <!-- Logo u gornjem desnom uglu -->
+
+<div class="meni"> <!-- Glavni meni -->
+<ul>
+<li id="izbor1"><a href="index.html">Pocetna</a></li>
+
+<li id="izbor2"><a href="Linkovi.html">Linkovi</a></li>
+
+<li id="izbor3" onmouseover="podmeni('podmeni1','izbor3')" onmouseout="zatvori('podmeni1','izbor3')"><a href="Materijali.html">Materijali</a>
+<div class="podmeni" id="podmeni1">
+<ul>
+<li><a href="Materijali.html">I godina</a></li>
+<li><a href="Materijali.html">II godina</a></li>
+<li><a href="Materijali.html">III godina</a></li>
+<li><a href="Materijali.html">IV godina</a></li>
+</ul>
+</div>
+</li>
+
+<li id="izbor4"><a href="Kontakt.html">Kontakt</a></li>
+
+</ul>
+</div>
+</div>
+
+<div id="login" onmouseover="promjenaBoje('login')" onmouseout="vratiBoju('login')"><a id="linkPrijava" href="#">Prijavi se</a></div> <!-- Dugme za prijavu -->
+<div id="register" onmouseover="promjenaBoje('register')" onmouseout="vratiBoju('register')"><a id="linkRegistracija" href="#">Registruj se</a></div> <!-- Dugme za registraciju -->
 <!-- Naslov stranice -->
-<div class="naslovnica" onmouseover="ocisti()"> Materijali </div>
 
-<!-- Glavni meni -->
-<div id="meni">
-<div id="Pocetna"><a id="PocetnaLink" href="Pocetna.html" onmouseover="podmeni('PocetnaLink')" onmouseout="misVani('PocetnaLink')">Pocetna</a></div>
+<div id="sadrzaj"><!-- Sadrzaj stranice-->
 
-<div id="Kontakt"><a id="KontaktLink" href="#" onclick="return false;" onmouseover="podmeni('podmeni1')">Kontakt</a>
-<div id="podmeni1" class="drugimeni">
-<a href="Kontakt.html">Nista 1</a>
-<a href="Kontakt.html">Nista 2</a>
-<a href="Kontakt.html">Nista 3</a>
-<a href="Kontakt.html">Nista 4</a>
-</div>
-</div>
-
-<div id="Linkovi"><a id="LinkoviLink" href="#" onclick="return false;" onmouseover="podmeni('podmeni2')">Linkovi</a>
-<div id="podmeni2" class="drugimeni">
-<a href="Linkovi.html">I</a>
-<a href="Linkovi.html">II</a>
-<a href="Linkovi.html">III</a>
-<a href="Linkovi.html">IV</a>
-</div>
-</div>
-
-<div id="Materijali"><a id="MaterijaliLink" href="#" onclick="return false;" onmouseover="podmeni('podmeni3')">Materijali</a>
-<div id="podmeni3" class="drugimeni">
-<a href="Materijali.html">I godina</a>
-<a href="Materijali.html">II godina</a>
-<a href="Materijali.html">III godina</a>
-<a href="Materijali.html">IV godina</a>
-<a href="Materijali.html">Ostalo</a>
-</div>
-</div>
-
-</div>
-
-<div id="glavniDio" onmouseover="ocisti()">
-
-<form class="kontakt" action=""> Kontaktirajte nas :
+<form class="kontakt" action="nista()">
 <table border="0" cellspacing="0" cellpadding="2">
 <tr>
 <td>
   Ime:
 </td>
 <td>
-  <input type="text">
+  <input type="text" value="Alen" id="greska">
 </td>
 </tr>
 <tr>
@@ -79,20 +76,45 @@ Materijali
   </td>
 </tr>
 <tr>
+   <td>
+   Opcina:
+   </td>
+   <td>
+   <input type="text" id="opcina">
+   </td>
+   <td>
+   <div id="greskaOpcina1"><img src="error.png" alt="greska"></div>
+   </td>
+   <td>
+   <div id="greskaOpcina2">Ne slazu se</div>
+   </td>
+</tr>
+<tr>
+	<td>
+	Postanski broj:
+	</td>
+	<td>
+	<input type="text" id="postBroj">
+	</td>
+	<td>
+	<div id="greskaBroj1"><img src="error.png" alt="greska"></div>
+	</td>
+	<td>
+	<div id="greskaBroj2">Ne slazu se</div>
+	</td>
+</tr>
+<tr>
 <td>
-  <input type="submit" value="Posalji">
+  <input type="button" id="submit" onclick="validirajFormu()" value="Submit">;
 </td>
 </tr>
  </table>
 </form>
 
-<div id="informacije">
-SeferAlen 15458 etf Sarajevo<br>
-Sefer Alen 70230 Bugojno<br>
-asefer1@etf.unsa.ba<br>
-062/939-348
-</div>
-</div>
+</div><!-- Kraj sadrzaja stranice-->
+
+
+</div> 
 </div>
 </BODY>
 </HTML>
