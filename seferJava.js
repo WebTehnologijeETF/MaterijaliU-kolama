@@ -98,27 +98,18 @@ var ajax = new XMLHttpRequest();
 	ajax.send();
 };
 
+function ucitaj(stranica){
+	
+	var ajax = new XMLHttpRequest();
+	ajax.onreadystatechange = function() {
+		if (ajax.readyState == 4 && ajax.status == 200)
+			document.getElementById("wrapper").innerHTML = ajax.responseText;
+		if (ajax.readyState == 4 && ajax.status == 404)
+			document.getElementById("wrapper").innerHTML = "Greska: nepoznat URL";
+	}
+	ajax.open("GET", stranica, true);
+	ajax.send();
 
-function ucitaj(str)
-{
-	var xmlhttp;
-	if(window.XMLHttpRequest)
-		{	// code for IE7+, Firefox, Chrome, Opera, Safari
-			xmlhttp=new XMLHttpRequest();
-		}
-	else
-		{// code for IE6, IE5
-			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-		}
-	xmlhttp.onreadystatechange=function()
-		{
-			if(xmlhttp.readyState==4 && xmlhttp.status==200)
-				{
-						document.getElementById("proba").innerHTML=xmlhttp.responseText;
-				}
-		}
-	xmlhttp.open("GET",str,true);
-	xmlhttp.send();
 }
 
 

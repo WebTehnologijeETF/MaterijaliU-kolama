@@ -24,20 +24,20 @@ Materijali
 <ul>
 <li id="izbor1"><a href="index.html">Pocetna</a></li>
 
-<li id="izbor2"><a href="Linkovi.html">Linkovi</a></li>
+<li id="izbor2"><a href="#" onclick="ucitaj('Linkovi.html'); return false;">Linkovi</a></li>
 
-<li id="izbor3" onmouseover="podmeni('podmeni1','izbor3')" onmouseout="zatvori('podmeni1','izbor3')"><a href="Materijali.html">Materijali</a>
+<li id="izbor3" onmouseover="podmeni('podmeni1','izbor3')" onmouseout="zatvori('podmeni1','izbor3')"><a href="#" onclick="ucitaj('Materijali.html'); return false;">Materijali</a>
 <div class="podmeni" id="podmeni1">
 <ul>
-<li><a href="Materijali.html">I godina</a></li>
-<li><a href="Materijali.html">II godina</a></li>
-<li><a href="Materijali.html">III godina</a></li>
-<li><a href="Materijali.html">IV godina</a></li>
+<li><a href="#" onclick="ucitaj('Materijali.html'); return false;">I godina</a></li>
+<li><a href="#" onclick="ucitaj('Materijali.html'); return false;">II godina</a></li>
+<li><a href="#" onclick="ucitaj('Materijali.html'); return false;">III godina</a></li>
+<li><a href="#" onclick="ucitaj('Materijali.html'); return false;">IV godina</a></li>
 </ul>
 </div>
 </li>
 
-<li id="izbor4"><a href="Kontakt.html">Kontakt</a></li>
+<li id="izbor4"><a href="#" onclick="ucitaj('Kontakt.html'); return false;">Kontakt</a></li>
 
 </ul>
 </div>
@@ -47,7 +47,8 @@ Materijali
 <div id="register" onmouseover="promjenaBoje('register')" onmouseout="vratiBoju('register')"><a id="linkRegistracija" href="#">Registruj se</a></div> <!-- Dugme za registraciju -->
 <!-- Naslov stranice -->
 
-<div id="sadrzaj"><!-- Sadrzaj stranice-->
+<div ID="wrapper"><!-- Sadrzaj stranice-->
+<div class="container">
 
 <div class="novostiOkvir">Novosti:
 <div class="novostiSlika"><img src="razmjena.jpg" alt="razmjena">Dobrodosli na stranicu materijali.com koja sluzi za razmjenu materijala u srednjim skolama</div>
@@ -160,6 +161,9 @@ IV godina
 </td>
 </tr>
 </table>
+
+</div>
+
 </div>
 
 </div><!-- Kraj sadrzaja stranice-->
