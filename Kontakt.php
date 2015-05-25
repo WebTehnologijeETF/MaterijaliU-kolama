@@ -22,7 +22,11 @@ Materijali
 
 <div class="meni"> <!-- Glavni meni -->
 <ul>
+<<<<<<< HEAD
 <li id="izbor1"><a href="#" onclick="ucitaj('Pocetna.php'); return false">Pocetna</a></li>
+=======
+<li id="izbor1"><a href="#" onclick="ucitaj('Pocetna.html'); return false">Pocetna</a></li>
+>>>>>>> origin/master
 
 <li id="izbor2"><a href="#" onclick="ucitaj('Linkovi.html'); return false;">Linkovi</a></li>
 

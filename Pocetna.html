@@ -125,6 +125,7 @@ IV godina
 
 </div>
 
+<<<<<<< HEAD
 <?php
 $veza = new PDO("mysql:dbname=materijali;host=localhost;charset=utf8", "Alen", "pass");
 $rezultat = $veza->query("select id, naslov, tekst, UNIX_TIMESTAMP(vrijeme) vrijeme2, autor from vijest order by vrijeme desc");
@@ -143,6 +144,8 @@ foreach ($rezultat as $vijest)
 }
 ?>
 
+=======
+>>>>>>> origin/master
 </div>
 </BODY>
 </HTML>
