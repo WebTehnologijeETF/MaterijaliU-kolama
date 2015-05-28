@@ -55,12 +55,12 @@ Materijali
 <?php
 if(isset($_POST['submit']))
 {
-	$veza = new PDO("mysql:dbname=materijali;host=localhost;charset=utf8", "Alen", "pass");
+	$veza = new PDO("mysql:dbname=materijali;host=127.4.204.130;charset=utf8", "AlenSefer", "pass");
 	$rezultatVij = $veza->query("INSERT INTO `materijali`.`komentari` (`id`, `vijest`, `tekst`, `autor`, `vrijeme`) VALUES (NULL, '".$_GET['vijest']."', '".htmlentities($_POST['com'] , ENT_QUOTES)."', '".htmlentities($_POST['aut'] , ENT_QUOTES)."', NOW());");
 }
 if(isset($_GET['vijest']))
 {
-	$veza = new PDO("mysql:dbname=materijali;host=localhost;charset=utf8", "Alen", "pass");
+	$veza = new PDO("mysql:dbname=materijali;host=127.4.204.130;charset=utf8", "AlenSefer", "pass");
 	$rezultatVij = $veza->query("select id, naslov, tekst, slika, UNIX_TIMESTAMP(vrijeme) vrijeme2, autor from vijesti where id=".$_GET['vijest']);
 	$rezultatKom = $veza->query("select id, tekst, vijest, UNIX_TIMESTAMP(vrijeme) vrijeme2, autor from komentari where vijest=".$_GET['vijest']);
 	foreach($rezultatVij as $vijest)
@@ -75,7 +75,7 @@ if(isset($_GET['vijest']))
 }
 else
 {
-$veza = new PDO("mysql:dbname=materijali;host=localhost;charset=utf8", "Alen", "pass");
+$veza = new PDO("mysql:dbname=materijali;host=127.4.204.130;charset=utf8", "AlenSefer", "pass");
 $rezultat = $veza->query("select id, naslov, tekst, slika, UNIX_TIMESTAMP(vrijeme) vrijeme2, autor from vijesti order by vrijeme desc");
 if (!$rezultat) 
 {
